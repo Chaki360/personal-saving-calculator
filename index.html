@@ -13,28 +13,36 @@
 </head>
 
 <body class="container">
+    <h1 class="text-center mt-3">Personal Savings</h1>
     <section class="d-flex">
         <div>
-
-            <h1 class="text-center">Personal Savings</h1>
-            <img src="personal-savings.jpeg" alt="">
+            <img class="mt-5" src="personal-savings.jpeg" alt="">
         </div>
         <div class="calc">
 
             <h2 class="text-center">Income</h2>
 
-            <h5>Income:</h5> <input type="text" value="25000" class="mt-2 bg-gradient">
+            <h5>Income: <input id="income-input" placeholder="Enter Your Total Income" type="value"
+                    class=" mt-2 bg-gradient"></h5>
             <h2 class="text-center mt-2">Expenses</h2><br>
-            <h5>Food:</h5> <input type="text" class="mt-2 bg-gradient"><br>
-            <h5>Rent:</h5> <input type="text" class="mt-2 bg-gradient"><br>
-            <h5>Clothes:</h5> <input type="text" class="mt-2 bg-gradient"><br>
+            <h5>For Food: <input id="food-input" type="text" placeholder="Enter Your Food's Cost"
+                    class="mt-2 bg-gradient">
+            </h5><br>
+            <h5>For Rent: <input id="rent-input" type="text" placeholder="Enter Your Rent's Cost"
+                    class="mt-2 bg-gradient">
+            </h5><br>
+            <h5>Clothes: <input id="cloth-input" type="text" placeholder="Enter Your Clothes Cost "
+                    class="mt-2 bg-gradient">
+            </h5>
 
 
-            <button type="button" class="btn btn-info mt-lg-4 rounded-3">Calculate</button><br>
-            <h2 class="mt-2">Total Expenses:</h2>
-            <h2>Balance:</h2>
+            <button id="calculator" type="button"
+                class="fw-bold text-black btn btn-info mt-lg-4 rounded-3">Calculate</button><br>
+            <h2 class="mt-2">Total Expenses:<span id="expences">0</span></h2>
+            <h2>Balance:<span id="balance">0</span></h2>
 
         </div>
+
 
 
 
