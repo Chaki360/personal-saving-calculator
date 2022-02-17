@@ -41,4 +41,16 @@ const totalCost = document.getElementById("calculator").addEventListener('click'
     const newCurrentBalance = totalIncome - totalExpenses;
     currentBalance.innerText = newCurrentBalance;
 
+    const totalCost = document.getElementById("saving-btn").addEventListener('click', function () {
+
+        const savingInput = document.getElementById('saving-input');
+        const savingValue = document.getElementById('saving-input').value;
+        const savingAmount = totalIncome / 100;
+        const allSaving = savingValue * savingAmount;
+
+        console.log(savingAmount);
+
+
+    })
+
 })
