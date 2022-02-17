@@ -2,19 +2,29 @@
 
 const totalCost = document.getElementById("calculator").addEventListener('click', function () {
 
-    const incomeInput = document.getElementById('income-input').value;
-    const totalIncome = parseInt(incomeInput);
+    const incomeInput = document.getElementById('income-input')
+    const incomeValue = document.getElementById('income-input').value;
+    const totalIncome = parseInt(incomeValue);
+    incomeInput.value = ''
 
 
 
-    const foodInput = document.getElementById('food-input').value;
-    const totalFoodCost = parseInt(foodInput);
+    const foodInput = document.getElementById('food-input');
+    const foodValue = document.getElementById('food-input').value;
+    const totalFoodCost = parseInt(foodValue);
+    foodInput.value = ''
 
-    const rentInput = document.getElementById('rent-input').value;
-    const totalRentCost = parseInt(rentInput);
+    const rentInput = document.getElementById('rent-input');
+    const rentValue = document.getElementById('rent-input').value;
+    const totalRentCost = parseInt(rentValue);
+    rentInput.value = ''
 
-    const ClothInput = document.getElementById('cloth-input').value;
-    const totalClothCost = parseInt(ClothInput);
+
+    const ClothInput = document.getElementById('cloth-input');
+    const ClothValue = document.getElementById('cloth-input').value;
+    const totalClothCost = parseInt(ClothValue);
+    ClothInput.value = ''
+
 
     const currentExpense = document.getElementById('expences');
     const currentExpenseAmount = currentExpense.innerText;
@@ -30,6 +40,7 @@ const totalCost = document.getElementById("calculator").addEventListener('click'
 
     const newCurrentBalance = totalIncome - totalExpenses;
     currentBalance.innerText = newCurrentBalance;
+
 
 
 
