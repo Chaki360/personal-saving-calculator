@@ -12,11 +12,11 @@
 
 </head>
 
-<body class="container">
+<body>
     <h1 class="text-center mt-3">Personal Savings</h1>
     <section class="d-flex">
         <div>
-            <img class="mt-5" src="personal-savings.jpeg" alt="">
+            <img class="mt-5 img-fluid p-4" src="personal-savings.jpeg" alt="">
         </div>
         <div class="calc">
 
@@ -38,10 +38,23 @@
 
             <button id="calculator" type="button"
                 class="fw-bold text-black btn btn-info mt-lg-4 rounded-3">Calculate</button><br>
-            <h2 class="mt-2">Total Expenses:<span id="expences">00</span></h2>
-            <h2>Balance:<span id="balance">00</span></h2>
+            <h3 class="mt-2">Total Expenses:<span id="expences">00</span></h3>
+            <h3>Balance:<span id="balance">00</span></h3>
+
+
+            <span>
+                <h5>Save: <input id="save-percentage" type="text" placeholder="Enter percentage"
+                        class="mt-4 bg-gradient">
+                </h5> % <button id="saving-btn" type="button"
+                    class="fw-bold text-black btn btn-info mt-lg-4 rounded-3">Save</button>
+            </span>
+            <h3 class="mt-2">Saving Amount:<span id="savings">00</span></h3>
+            <h3>Remaining Balance:<span id="remaining-balance">00</span></h3>
 
         </div>
+
+
+
 
 
 

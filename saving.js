@@ -41,9 +41,4 @@ const totalCost = document.getElementById("calculator").addEventListener('click'
     const newCurrentBalance = totalIncome - totalExpenses;
     currentBalance.innerText = newCurrentBalance;
 
-
-
-
-
-
 })
