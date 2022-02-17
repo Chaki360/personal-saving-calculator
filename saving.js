@@ -16,6 +16,23 @@ const totalCost = document.getElementById("calculator").addEventListener('click'
     const ClothInput = document.getElementById('cloth-input').value;
     const totalClothCost = parseInt(ClothInput);
 
+    const currentExpense = document.getElementById('expences');
+    const currentExpenseAmount = currentExpense.innerText;
+    const myCurrentExpense = parseFloat(currentExpenseAmount);
+
+    const currentBalance = document.getElementById('balance');
+    const currentBalanceAmount = currentBalance.innerText;
+    const myCurrentBalance = parseFloat(currentBalanceAmount);
+
+
+    const totalExpenses = (totalFoodCost + totalRentCost + totalClothCost + myCurrentExpense);
+    currentExpense.innerText = totalExpenses;
+
+    const newCurrentBalance = totalIncome - totalExpenses;
+    currentBalance.innerText = newCurrentBalance;
+
+
+
 
 
 })
